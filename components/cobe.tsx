@@ -24,7 +24,6 @@ export default function Cobe() {
 			glowColor: [1, 1, 1],
 			markers: [
 				// longitude latitude
-				{ location: [37.7595, -122.4367], size: 0.03 },
 				{ location: [40.7128, -74.006], size: 0.1 },
 			],
 			onRender: (state) => {
