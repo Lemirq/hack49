@@ -45,3 +45,7 @@
 body {
 	overscroll-behavior: none;
 }
+
+section {
+	scroll-margin: 5rem;
+}

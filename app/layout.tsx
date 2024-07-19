@@ -1,11 +1,7 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import './satoshi.css';
-import { Toaster } from 'sonner';
-// import Navbar from '@/components/Navbar';
-import { GoogleAnalytics } from '@next/third-parties/google';
-// import Footer from '@/components/Footer';
+import '@/app/globals.css';
+import '@/app/satoshi.css';
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
 	title: 'Hack49',
@@ -30,16 +26,15 @@ export const viewport: Viewport = {
 	userScalable: false,
 };
 
-export default function RootLayout({
+export default function PublicLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className="dark">
 			<body className={'bg-neutral-950 font-satoshi text-white'}>
-				{children}
-				<Toaster />
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);

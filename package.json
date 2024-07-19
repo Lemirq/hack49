@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^14.2.4",
+    "@nextui-org/react": "^2.4.5",
     "@react-three/drei": "^9.108.1",
     "@react-three/fiber": "^8.16.8",
     "@supabase/ssr": "^0.4.0",

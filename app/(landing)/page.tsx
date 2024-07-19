@@ -1,9 +1,8 @@
 'use client';
 import React from 'react';
-import dynamic from 'next/dynamic';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
 import MeetTheTeam from '@/components/sections/MeetTheTeam';
+import About from '@/components/sections/About';
 
 export default function Home() {
 	return (
